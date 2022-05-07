@@ -38,6 +38,7 @@ body {
 }
 
 .container{
+    box-sizing: border-box;
     width: 1200px;
     margin-right: auto;
     margin-left: auto;
@@ -69,8 +70,8 @@ body {
 }
 
 .logo {
-    margin-top: 24px;
-    margin-bottom: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: var(--blue-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -133,15 +134,23 @@ body {
     height: 0px;
     left: 0px;
     top: 80px;
-    
-    border: 1px solid #ECECEC;
+    border:1, 0, 0, 0 solid #ECECEC;
 }
 /* Hero start */
 .hero {
     background-color: #2f303a;
+    width: 1600px;
+    text-align: center;
+    margin-bottom: 94px;
 }
 .hero-title {
+    box-sizing: border-box;
     margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 200px;
+    width: 696px;
+    text-align: center;
     color: var(--white-color);
     background-color: #2f303a;
     font-weight: 900;
@@ -153,8 +162,15 @@ body {
 }
 
 .button {
-    margin-right: 700px;
-    margin-left: 700px;
+    box-sizing: border-box;
+    width: 220px;
+    padding-top: 10px;
+    padding-right: 32px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 200px;
     color: var(--white-color);
     background-color: var(--blue-color);
     font-family: Roboto, sans-serif;
@@ -173,6 +189,9 @@ body {
     font-size: 36px;
     line-height: 1.2;
     text-align: center; }*/
+.benefits{
+    margin-bottom: 94px;
+}
 
 .benefits-list{
     width: 270px;
@@ -195,7 +214,6 @@ body {
 }
 .benefits-lists{
     display: flex;
-    margin-top: 94px;
     width: 1170px;
     margin-right: auto;
     margin-left: auto;
@@ -213,8 +231,11 @@ body {
     justify-content: center;
 }
 
+.gallery{
+    margin-bottom: 94px;
+}
+
 .gallery-title {
-    margin-top: 94px;
     margin-bottom: 50px;
     color: var(--primary-color);
     font-weight: 700;
@@ -228,7 +249,7 @@ body {
 }
 
 .team{
-    margin-top: 94px;
+    margin-bottom: 94px;
 }
 
 .employeers{
@@ -242,7 +263,6 @@ body {
     display: block;
     height: 368px;
     width: 270px;
-    margin-bottom: 94px;
     text-align: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
