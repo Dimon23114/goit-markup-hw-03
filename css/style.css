@@ -1,6 +1,6 @@
 html{
     box-sizing: border-box;
-    width: 1600px;
+
 
 }
 *,
@@ -22,7 +22,9 @@ h3,
 h4,
 h5,
 ul,
-p{
+li,
+p,
+a{
     margin: 0;
     padding: 0;
 }
@@ -47,31 +49,32 @@ body {
 }
 .loft-list{
     display: flex;
-    align-items: center;
-    
+    justify-content: center;
 }
-
 .header-nav{
     display: flex;
-    margin-left: 93px;
+    margin-left: 94px;
+    justify-content: center;
 }
 
 .contacts-nav{
     display: flex;
     margin-left: auto;
-}
-.menu{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 .contacts-nav>.menu+.menu {
     margin-left: 50px;
 }
 
-.logo {
+.logo-header{
     padding-top: 24px;
     padding-bottom: 24px;
+}
+
+.logo {
     color: var(--blue-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -98,14 +101,23 @@ body {
 
 .link {
     display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--primary-color);
     font-weight: 500;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
+.current{
+    color: var(--blue-color);
+    
+}
 
 .link:hover,
 .link:focus {
+    color: var(--blue-color);
+}
+.menu .active:active: {
     color: var(--blue-color);
 }
 .list-link> .link:active {
@@ -141,14 +153,16 @@ body {
     background-color: #2f303a;
     width: 1600px;
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 94px;
+    padding-top: 200px;
 }
 .hero-title {
     box-sizing: border-box;
     margin-bottom: 30px;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 200px;
     width: 696px;
     text-align: center;
     color: var(--white-color);
@@ -183,13 +197,8 @@ body {
     border: none;
 }
 /* Hero end */
-/* .benefits-title {
-    color: var(--primary-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center; }*/
 .benefits{
+    margin-top: 94px;
     margin-bottom: 94px;
 }
 
@@ -202,7 +211,7 @@ body {
 }
 
 .benefits-subtitle {
-    padding-bottom: 26px;
+    margin-bottom: 26px;
     color: var(--primary-color);
     font-weight: 700;
     text-transform: uppercase;
@@ -249,7 +258,8 @@ body {
 }
 
 .team{
-    margin-bottom: 94px;
+    background-color: rgba(245, 244, 250, 1)          ;
+    padding-bottom: 94px;
 }
 
 .employeers{
@@ -295,26 +305,26 @@ body {
 }
 /* Footer */
 .basement {
-
     background-color: #2f303a;
     padding-top: 60px;
-}
-.port-basement{
-    margin-top: 94px;
+    padding-bottom: 60px;
 }
 .bottom-logo{
+    padding: 0;
     margin-bottom: 20px;
 }
 
 address {
+    margin-top: 20px;
     font-style: normal;
     text-decoration: none;
     color: #ffffff;
 }
 
 .adress {
+    padding: 0px;
+    margin: 0;
     display: inline-block;
-    margin-top: 20px;
     color: var(--white-color);
     line-height: 1.7;
     font-weight: 400;
@@ -322,6 +332,7 @@ address {
 }
 
 .box {
+    padding: 0px;
     margin-top: 9px;
     color: rgba(255, 255, 255, 0.6);
     line-height: 1.7;
@@ -374,6 +385,13 @@ address {
     cursor: pointer;
 }
 
+.loft-port{
+    margin-bottom: 94px;
+}
+.hero-port{
+    margin-bottom: 94px;
+
+}
 .hero-port-title{
     text-align: center;
 }
