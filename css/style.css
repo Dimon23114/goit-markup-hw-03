@@ -383,7 +383,7 @@ address {
     margin-bottom: 94px;
 }
 .hero-port{
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 
 }
 .hero-port-title{
@@ -392,7 +392,6 @@ address {
 .menu-port{
     display: flex;
     justify-content: center;
-    margin-top: 94px;
     margin-bottom: 50px;
 }
 .showcase{
